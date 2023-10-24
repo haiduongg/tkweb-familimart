@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="./src/assets/img/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>FAMILY MART</title>
+    <link rel="stylesheet" href="./src/styles/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__inner">
+        <div class="header__inner-logo">
+          <a href="/">
+            <img
+              src="./src/assets/img/logo.png"
+              alt="FamilyMart Logo"
+              width="130"
+              height="40"
+            />
+          </a>
+        </div>
+        <ul class="header__inner-menu">
+          <li class="header__inner-menu-item">
+            <a href="./src/views/login.html">
+              <i class="bx bx-search btn" id="search"></i>
+            </a>
+          </li>
+          <li class="header__inner-menu-item">
+            <a href="/">Trang chủ</a>
+          </li>
+          <li class="header__inner-menu-item">
+            <a href="/about">Về Family Mart</a>
+          </li>
+          <li class="header__inner-menu-item">
+            <a href="/news">Tin Tức</a>
+          </li>
+          <li class="header__inner-menu-item">
+            <a href="/products">Sản phẩm</a>
+          </li>
+          <li class="header__inner-menu-item">
+            <a href="/sale">Khuyến mãi</a>
+          </li>
+          <li class="header__inner-menu-item">
+            <a href="/stores">Cửa hàng</a>
+          </li>
+          <li class="header__inner-menu-item">
+            <a href="/contact">Liên hệ</a>
+          </li>
+          <li class="header__inner-menu-item">
+            <a href="./src/views/login.html"
+              ><i class="bx bx-user bx-flip-horizontal btn"></i
+            ></a>
+          </li>
+          <li class="header__inner-menu-item">
+            <a href="./src/views/Cart.html"><i class="bx bx-cart btn"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="header__separation"></div>
+    </header>
+
+    <main>
+      <aside class="carousel">
+        <img src="./src/assets/img/carasou.png" alt="" />
+      </aside>
+
+      <section class="container products-list">
+        <div class="products-list__heading">
+          <h1>Sản phẩm mới nhất</h1>
+          <div class="products-list__heading-separation"></div>
+        </div>
+        <div class="products-list__products" id="newproducts">
+          <!-- Dữ liệu sản phẩm mới nhất sẽ được thêm vào đây -->
+        </div>
+      </section>
+
+      <section class="container products-list" style="margin-top: 80px">
+        <div class="products-list__heading">
+          <h1>Sản phẩm nổi bật</h1>
+          <div class="products-list__heading-separation"></div>
+        </div>
+        <div class="products-list__products" id="hightlightproducts">
+          <!-- Dữ liệu sản phẩm nổi bật sẽ được thêm vào đây -->
+        </div>
+      </section>
+
+      <section class="about">
+        <div class="about__heading">
+          <h1>About FamilyMart</h1>
+        </div>
+        <div class="about__inner">
+          <img
+            src="./src/assets/img/about.jpg"
+            alt="notfound"
+            width="600"
+            height="300"
+          />
+          <div class="about__inner-content">
+            <h4>
+              FamilyMart là hệ thống cửa hàng tiện lợi của Nhật theo mô hình bán
+              lẻ hoàn toàn mới dựa trên kinh nghiệm hoạt động trên 30 năm.
+              <br />
+              <br />
+              Hiện tại, số lượng cửa hàng tại Nhật và 8 nước khác trên Thế giới
+              (bao gồm cả Việt Nam) đã đạt đến con số gần 24,500 cửa hàng.
+              <br />
+              <br />
+              Cửa hàng mở cửa 24/24 và kinh doanh 365 ngày không có ngày nghỉ,
+              do đó khách hàng có thể đến với chúng tôi và mua sắm bất cứ lúc
+              nào!
+            </h4>
+            <a href="/about"><button>See More</button></a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <h1 class="footer__heading">
+        Công Ty TNHH Cửa Hàng Tiện Lợi Gia Đình Việt Nam
+      </h1>
+      <div class="footer__content">
+        <p>
+          Giấy CNĐKDN: 0312283473 – Ngày cấp: 17/5/2013, được sửa đổi lần thứ 53
+          ngày 21/12/2022.
+          <br />
+          Cơ quan cấp: Phòng Đăng ký kinh doanh – Sở kế hoạch và Đầu tư TP.HCM
+          <br />
+          Địa chỉ đăng ký kinh doanh: Tầng 8, Tòa nhà An Khánh, số 63 Phạm Ngọc
+          Thạch, Phường Võ Thị Sáu, Quận 3, Tp. Hồ Chí Minh, Việt Nam.
+          <br />
+          Điện thoại (Văn phòng): (028) 39305180
+          <br />
+          Hotline tuyển dụng: 0797487866 Email: info@famima.vn
+        </p>
+      </div>
+    </footer>
+    <script src="./src/utils/RenderProductsList.js"></script>
+  </body>
+</html>

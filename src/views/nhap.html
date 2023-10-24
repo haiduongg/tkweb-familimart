@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+    <link rel="stylesheet" href="../css/fml.css">
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 30px;
+        padding: 0px;
+        background-color: #f5f5fa;
+        box-sizing: border-box;
+      }
+      .container {
+        display: flex;
+        justify-content: space-between;
+      }
+      .product {
+        flex: 65%;
+        background-color: #ffffff;
+        padding: 20px;
+        margin-right: 20px;
+      }
+      .order {
+        flex: 35%;
+        background-color: #ffffff;
+        padding: 20px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: left;
+      }
+      th {
+        background-color: #f2f2f2;
+      }
+      .productc img {
+        max-width: 200px;
+        height: auto;
+      }
+      .infoproduct {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .productc {
+        display: flex;
+      }
+      .order {
+        flex: 35%;
+        background-color: #ffffff;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      /* Các ô bên phải có chiều cao 200px */
+      .o1 {
+        background-color: #ffffff;
+        margin-bottom: 10px;
+        height: 100px;
+      }
+      .o2 {
+        background-color: #ffffff;
+        margin-bottom: 10px;
+        height: 100px;
+        margin-left: 130px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="product">
+        <h1 style="text-align: center">Giỏ hàng</h1>
+        <table>
+          <thead>
+            <tr>
+              <th>STT</th>
+              <th>Hình ảnh</th>
+              <th>Giá</th>
+              <th>Số lượng</th>
+              <th>Thành tiền</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>
+                <div class="productc">
+                  <div><img src="../image/sp1.jpg" alt="no" /></div>
+                  <div class="infoproduct" style="margin-left: 50px">
+                    <h3
+                      style="text-transform: uppercase; color: rgb(52, 93, 170)"
+                    >
+                      Cháo đùi gà
+                    </h3>
+                  </div>
+                </div>
+              </td>
+              <td>$20.00</td>
+              <td>
+                <input type="number" value="2" min="1" />
+              </td>
+              <td>$40.00</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="order">
+        <h1 style="text-align: center">Đặt hàng</h1>
+        <div
+          class="o1"
+          style="
+  
+            height: 200px;
+            width: 200px;
+           margin-left: 130px;
+          "
+        >
+      <div style="display: flex; justify-content: space-between; padding:0px 10px 0px 10px;"><p>Giao tới</p>
+        <p><a href="https://www.facebook.com/hi.all.people/" class="local">Thay đổi</a></p>
+      </div>
+      <div style="display: flex; padding:0px 5px 0px 5px; box-sizing:border-box ;" ><p>Lê Phúc Vinh</p> <hr style="height: 15px; margin-top: 15px;"> <p>0795582457</p></div>
+      <div style="display: flex; justify-content: space-between; padding:0px 10px 0px 10px;"><p>văn phòng tuyển sinh hoàng diệu</p></div>
+    </div>
+  
+        <div
+          class="o2"
+          style="
+  
+            height: 200px;
+            width: 200px;
+            margin-bottom: 20px;
+            text-align: center;
+          "
+        >
+          <button class="button">Đặt hàng</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

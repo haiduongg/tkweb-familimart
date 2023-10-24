@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Page</title>
+  </head>
+  <body>
+    <div class="product">
+  
+      <button id="addToCartBtn">Add to Cart</button>
+    </div>
+
+    <div class="cart">
+      <h2>Shopping Cart</h2>
+      <ul id="cartItems"></ul>
+    </div>
+
+    <script>
+      // Lấy các phần tử từ HTML
+      const addToCartBtn = document.getElementById("addToCartBtn");
+      const cartItemsList = document.getElementById("cartItems");
+
+      // Mảng chứa các sản phẩm trong giỏ hàng
+      let cartItems = [];
+
+      // Hàm để thêm sản phẩm vào giỏ hàng
+      function addToCart() {
+        // Tạo một sản phẩm giả
+        const product = {
+          name: "Product Ne",
+          price: 99.99,
+        };
+
+        // Thêm sản phẩm vào mảng giỏ hàng
+        cartItems.push(product);
+
+        // Hiển thị sản phẩm trong giỏ hàng
+        renderCartItems();
+      }
+
+      // Hàm để hiển thị sản phẩm trong giỏ hàng
+      function renderCartItems() {
+        // Xóa nội dung cũ trong giỏ hàng
+        cartItemsList.innerHTML = "";
+
+        // Hiển thị từng sản phẩm trong giỏ hàng
+        cartItems.forEach((item) => {
+          const li = document.createElement("li");
+          li.textContent = `${item.name} - $${item.price.toFixed(2)}`;
+          cartItemsList.appendChild(li);
+        });
+      }
+
+      // Gắn sự kiện nhấn nút "Add to Cart"
+      addToCartBtn.addEventListener("click", addToCart);
+    </script>
+  </body>
+</html>

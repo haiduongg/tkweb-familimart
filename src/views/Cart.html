@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng</title>
+    <style>
+        /* Thiết lập font chung cho trang web */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff; /* Màu nền của trang */
+            color: #333; /* Màu chữ chung */
+        }
+
+        /* Giỏ hàng */
+        .cartlist {
+            width: 80%;
+            margin: 20px auto; /* Tạo khoảng cách từ trên và dưới */
+            border-collapse: collapse;
+            background-color: #fff; /* Màu nền của bảng */
+        }
+
+        .cartlist th, .cartlist td {
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+
+        .cartlist th {
+            background-color: #f2f2f2;
+        }
+
+        .cartlist img {
+            max-width: 100px;
+            height: auto;
+        }
+
+        /* Số lượng */
+        .quantity {
+            width: 50px;
+        }
+
+        /* Tổng cộng */
+        .total {
+            font-weight: bold;
+        }
+
+        /* Định dạng nút bấm */
+        .button {
+            background-color: #ff5722; /* Màu cam */
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; color: #ff5722;">Giỏ hàng của bạn</h1>
+    <table class="cartlist" >
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th>Ảnh sản phẩm</th>
+                <th>Tên sản phẩm</th> <!-- Thêm cột tên sản phẩm -->
+                <th>Giá</th>
+                <th>Số lượng</th>
+                <th>Tổng</th>
+            </tr>
+        </thead>
+        <tbody id="cartlist">
+            <tr>
+                <td>1</td>
+                <td><img src="product1.jpg" alt="Product 1"></td>
+                <td>Product 1</td> <!-- Thêm tên sản phẩm -->
+                <td>$20.00</td>
+                <td><input type="number" class="quantity" value="1"></td>
+                <td>$20.00</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4" class="total">Tổng cộng</td>
+                <td colspan="2" id="totall">$70.00</td> <!-- Mở rộng cột Tổng cộng -->
+            </tr>
+        </tfoot>
+    </table>
+    <div style="text-align: center;">
+        <a href="../html/index.html"><button class="button">Tiếp tục mua sắm</button></a>
+      <a href="https://www.facebook.com/hi.all.people/">  <button class="button">Thanh toán</button> </a>
+    </div>
+    <script src="../js/cart.js">
+
+    </script>
+</body>
+</html>

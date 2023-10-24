@@ -1,0 +1,339 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: bolder;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 18.72px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 13.28px;
+}
+
+h6 {
+  font-size: 10.72px;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+i {
+  font-size: 20px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+body {
+  width: 100%;
+  background-color: #fff;
+  font-family: "Open Sans", sans-serif;
+}
+
+.header {
+  width: 100%;
+  background-color: #fff;
+  height: 70px;
+}
+.header__separation {
+  height: 5px;
+  width: 100%;
+  background: #1486c7;
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__inner-logo {
+  user-select: none;
+  padding-block: 5px;
+}
+.header__inner-menu {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  text-align: center;
+}
+.header__inner-menu-item {
+  cursor: pointer;
+  color: #47ae34;
+  margin-inline: 8px;
+  padding: 19px 2px;
+  transition: 0.3s;
+}
+.header__inner-menu-item > a {
+  padding: 19px 2px;
+  font-size: 18px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-weight: 600;
+}
+.header__inner-menu-item > a > i {
+  font-size: 25px;
+  vertical-align: middle;
+}
+.header__inner-menu-item > a .btn {
+  vertical-align: bottom;
+}
+.header__inner-menu-item:hover {
+  color: #000;
+  transition: 0.3s;
+}
+
+.separation {
+  width: 40px;
+  height: 3px;
+  background: #000;
+  opacity: 0.1;
+}
+
+main {
+  margin-block: 40px;
+}
+main .product {
+  display: flex;
+  gap: 40px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+main .product-description {
+  margin-top: 20px;
+}
+main .product-description .separation {
+  margin-block: 15px;
+}
+main .product-description-category {
+  text-transform: uppercase;
+  opacity: 0.5;
+  font-weight: bolder;
+  font-size: 14px;
+}
+main .product-description-heading {
+  text-transform: uppercase;
+  margin-top: 15px;
+  font-weight: bolder;
+  opacity: 0.8;
+}
+main .product-description-cost {
+  font-size: 120%;
+  color: #000000;
+  font-weight: bold;
+  line-height: 100%;
+}
+main .product-description > p {
+  margin: 25px 0 15px 0;
+  line-height: 25px;
+  opacity: 0.7;
+}
+main .product-description .button {
+  text-transform: uppercase;
+  margin-top: 15px;
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #fa320f;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+main .product-description .button:hover {
+  opacity: 0.8;
+}
+main .product-description .button:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.footer {
+  padding-top: 40px;
+  margin-bottom: 110px;
+  border-top: 2px solid #47ae34;
+  width: 100%;
+  height: 200px;
+  background-color: #fff;
+  text-align: center;
+  color: #47ae34;
+}
+.footer__heading {
+  text-transform: uppercase;
+}
+.footer__content {
+  margin-top: 20px;
+  line-height: 35px;
+}
+
+/*# sourceMappingURL=productStyle.css.map */
